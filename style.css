@@ -1,0 +1,147 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Set a fallback font-family */
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #3498db;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #2c3e50;
+  color: white;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.repositories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.repository {
+  width: calc(33.33% - 20px);
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.repository h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.repository p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.loader {
+  display: none;
+  margin: 50px auto 0;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination a:last-child {
+  margin-right: 0;
+}
+
+.pagination a.active {
+  background-color: #3498db;
+}
+
+.profile-info {
+  background-color: #2c3e50;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.profile-details {
+  margin-top: 20px;
+}

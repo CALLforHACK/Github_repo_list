@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-dGsCe2wOzn4DS5bgnUdscQ1sEOKtMGezg0laNpx1aZz0sWbqKvVFgxyh0FJuP8atgze9wXBy00pf8iWiQTSIfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Github Repositories</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <label for="username">Enter Github username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <button onclick="fetchRepositories()">Get Repositories</button>
+        </div>
+
+        <!-- Repositories per Page -->
+        <div class="repos-per-page">
+            <label for="reposPerPage">Repositories per page:</label>
+            <input type="number" id="reposPerPage" min="1" max="100" value="10" />
+        </div>
+
+        <!-- Profile Information Section -->
+        <div class="profile-info"></div>
+
+        <!-- Repository List -->
+        <div id="repositories" class="repositories-list"></div>
+
+        <!-- Loader -->
+        <div id="loader" class="loader"></div>
+
+       <!-- Pagination -->
+<div id="pagination" class="pagination">
+    <nav aria-label="Page navigation">
+      <ul class="pagination-buttons pagination"></ul>
+    </nav>
+  </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
